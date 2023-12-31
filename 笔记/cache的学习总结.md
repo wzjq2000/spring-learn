@@ -1,7 +1,7 @@
 # 前言
 Cache接口主要解决的是二级缓存问题. 至于一级缓存只是简单的使用了Cache的一个实现类, 即PerpetualCache, 其内部实质上只是一个HashMap. 一级缓存只在单个SqlSession中有效. 而二级缓存则可以跨SqlSession而存在.
 
-(关于SqlSession: 见SqlSession的学习总结)
+(关于SqlSession: [见SqlSession的学习总结](SqlSession的学习总结.md))
 
 本篇文章主要针对二级缓存展开讲解.
 

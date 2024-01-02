@@ -1,5 +1,6 @@
 package com.example.serverdemo.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.example.serverdemo.dto.Person;
 import com.example.serverdemo.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/")
 public class CacheTestController {
+
 
     @Autowired
     PersonService personService;

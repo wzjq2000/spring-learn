@@ -2,6 +2,7 @@ package com.example.serverdemo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,7 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 public class RestTemplateController {
     @GetMapping("/")
-    public String solveIndex(){
+    public String solveIndex(@RequestHeader("key") String testId){
+        System.out.println(testId);
         return "THIS IS INDEX";
     }
 

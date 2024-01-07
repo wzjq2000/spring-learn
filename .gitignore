@@ -38,3 +38,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+
+server-demo/src/main/resources/application.yaml

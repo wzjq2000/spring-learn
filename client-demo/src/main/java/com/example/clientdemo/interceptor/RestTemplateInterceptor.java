@@ -15,6 +15,7 @@ public class RestTemplateInterceptor  implements ClientHttpRequestInterceptor {
     @Override
     public ClientHttpResponse intercept(HttpRequest request, byte[] body, ClientHttpRequestExecution execution) throws IOException {
         HttpHeaders headers= request.getHeaders();
+        System.out.println(request.getURI());
         headers.add("key","value");
         ClientHttpResponse response = execution.execute(request, body);
         return response;

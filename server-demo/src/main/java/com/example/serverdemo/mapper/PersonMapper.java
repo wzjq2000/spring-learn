@@ -12,9 +12,11 @@ import org.apache.ibatis.annotations.Mapper;
  * @Entity generator.domain.Person
  */
 @Mapper
-@CacheNamespace
+//@CacheNamespace
 public interface PersonMapper extends BaseMapper<Person> {
 
+
+    Person selectByAge(Integer age);
 
 }
 

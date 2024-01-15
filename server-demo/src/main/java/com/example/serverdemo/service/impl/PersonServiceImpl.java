@@ -24,9 +24,11 @@ public class PersonServiceImpl extends ServiceImpl<PersonMapper, Person>
 
     @Override
     public Person selectOne(Integer age) {
-        QueryWrapper<Person> selectOneWrapper = new QueryWrapper<>();
-        selectOneWrapper.eq("age",age);
-        return personMapper.selectOne(selectOneWrapper);
+//        QueryWrapper<Person> selectOneWrapper = new QueryWrapper<>();
+//        selectOneWrapper.eq("age",age);
+//        return personMapper.selectOne(selectOneWrapper);
+
+        return personMapper.selectByAge(10);
     }
 }
 

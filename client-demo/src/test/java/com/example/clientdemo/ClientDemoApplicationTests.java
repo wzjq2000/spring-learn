@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootTest
 class ClientDemoApplicationTests {
-    String url = "http://localhost:8080";
+    String url = "http://localhost:8080/";
 
     @Autowired
     RestTemplate restTemplate;

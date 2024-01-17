@@ -8,6 +8,7 @@ import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
+import java.net.URI;
 
 @Component
 public class RestTemplateInterceptor  implements ClientHttpRequestInterceptor {
@@ -15,8 +16,10 @@ public class RestTemplateInterceptor  implements ClientHttpRequestInterceptor {
     @Override
     public ClientHttpResponse intercept(HttpRequest request, byte[] body, ClientHttpRequestExecution execution) throws IOException {
         HttpHeaders headers= request.getHeaders();
-        System.out.println(request.getURI());
+        URI uri = request.getURI();
         headers.add("key","value");
+
+        System.out.println(uri.getPath());
         ClientHttpResponse response = execution.execute(request, body);
         return response;
     }

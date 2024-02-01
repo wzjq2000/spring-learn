@@ -9,6 +9,7 @@
     <modules>
         <module>server-demo</module>
         <module>client-demo</module>
+        <module>original-spring-framework</module>
     </modules>
     <repositories>
         <repository>

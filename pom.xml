@@ -4,8 +4,11 @@
     <groupId>org.example</groupId>
     <artifactId>spring-learn</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>juc-learn</module>
+    </modules>
     <name>spring-learn</name>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <repositories>
         <repository>
             <id>apache-staging</id>

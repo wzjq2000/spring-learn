@@ -21,7 +21,12 @@
         </triggeringPolicy>
     </appender>
 
-    <root level="TRACE">
+
+    <logger name="logTest.LogTest" additivity="false" level="INFO">
+        <appender-ref ref="FILE"/>
+    </logger>
+
+    <root level="INFO">
         <appender-ref ref="CONSOLE" />
 <!--        <appender-ref ref="FILE" />-->
     </root>

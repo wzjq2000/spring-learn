@@ -1,4 +1,4 @@
-package com.example.serverdemo.mbean;
+package com.example.serverdemo.pojo;
 
 public interface UserMBean {
     String getName();

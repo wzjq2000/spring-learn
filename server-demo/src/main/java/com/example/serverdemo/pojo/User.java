@@ -1,8 +1,6 @@
 package com.example.serverdemo.pojo;
 
 
-import com.example.serverdemo.mbean.UserMBean;
-
 public class User implements UserMBean {
 
     private String name;

@@ -1,14 +1,11 @@
-package org.example.outside;
+package org.example.autoconfigure;
 
 
-import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure;
-import com.example.serverdemo.datasource.TestDataSource;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.example.datasource.TestDataSource;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
 
 import javax.sql.DataSource;
@@ -18,7 +15,6 @@ import javax.sql.DataSource;
 public class DatasourceAutoConfigure {
 
     @Bean
-    @ConditionalOnMissingBean
     public DataSource testDataSource(DataSource druidDataSource){
         return new TestDataSource(druidDataSource);
     }

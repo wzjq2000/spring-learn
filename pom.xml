@@ -10,6 +10,7 @@
         <module>server-demo</module>
         <module>client-demo</module>
         <module>original-spring-framework</module>
+        <module>my-database-starter</module>
     </modules>
     <repositories>
         <repository>

@@ -1,4 +1,4 @@
-package com.example.serverdemo.datasource;
+package org.example.datasource;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
